@@ -1,0 +1,15 @@
+:root {
+	--font-family: 'Playfair Display', sans-serif;
+	--second-family: 'Clicker Script', sans-serif;
+	--main-color: #fff;
+	--second-color: #707070;
+	--third-color: #1e1e1e;
+	--btn-color: #f9c06a;
+	--coffee: #603809;
+}
+
+body {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.7; /* 34/20 */
+}
