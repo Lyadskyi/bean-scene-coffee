@@ -42,7 +42,7 @@ html {
 	/* margin: 0 auto; */
 }
 
-/* === Header 1180/48px === */
+/* === Header 1520*48px === */
 .header {
 	position: absolute;
 	top: 20px;
@@ -93,7 +93,7 @@ html {
 	margin-left: 35px;
 }
 
-/* === Section Hero 1366*768px === */
+/* === Section Hero 1520*768px === */
 .hero {
 	background-image:
 		linear-gradient(89.82deg, #1e1e1e -7.01%, rgba(0, 0, 0, 0) 87.54%),
@@ -124,13 +124,61 @@ html {
 	margin-bottom: 20px;
 }
 
-/* === Section Discover 1180*484px === */
+/* === Section Discover 1334*484px === */
+.discover {
+	padding-top: 82px;
+}
+
+.discover__inner {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.discover__title {
+	font-weight: 700;
+	font-size: 54px;
+	margin-bottom: 29px;
+	color: var(--coffee);
+}
+
+.discover__text {
+	width: 585px;
+	margin-bottom: 29px;
+	color: var(--description);
+}
+
 .discover__img {
 	max-width: 100%;
 	height: auto; /* Зберігає пропорції */
 }
 
-/* === Section Amazing 1366*574px === */
+.coffee-blast {
+	position: absolute;
+	z-index: -10;
+	left: -125px;
+	top: 339px;
+}
+
+/* === Section Enjoy 1334*542px === */
+.enjoy {
+	padding-top: 82px;
+}
+
+.enjoy__title {
+	font-weight: 700;
+	font-size: 54px;
+	text-align: center;
+	color: var(--coffee);
+}
+
+.enjoy__text {
+	text-align: center;
+	color: var(--description);
+}
+
+/* === Section Amazing 1520*574px === */
 .amazing {
 	background-image: url('../images/amazing-bg.jpg');
 	background-position: center;
