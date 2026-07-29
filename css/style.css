@@ -194,8 +194,8 @@ html {
 	transition:
 		transform 0.2s ease,
 		box-shadow 0.3s ease;
-	background: var(--card-bg);
 	border: 1px solid rgba(249, 192, 106, 0.42);
+	background: var(--card-bg);
 }
 
 .coffee-menu-card:hover {
@@ -239,6 +239,75 @@ html {
 	transform: translateX(-50%);
 }
 
+/* === Section Different 1334*612px === */
+.different {
+	margin-top: 82px;
+	text-align: center;
+}
+
+.different__title {
+	font-weight: 700;
+	font-size: 54px;
+	color: var(--coffee);
+}
+
+.different__subtitle {
+	color: var(--description);
+}
+
+.advantages {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	align-items: center;
+	margin-block: 32px;
+}
+
+.advantages-card {
+	padding: 36px 34px;
+	transition: transform 0.6s ease;
+	border: 1px solid rgba(249, 192, 106, 0.42);
+	background: var(--card-bg);
+}
+
+.advantages-card:hover {
+	transition: background 0.2s ease-in-out;
+	background: #ffeed8;
+}
+
+.advantages__img {
+	margin: 0 auto;
+}
+
+.advantages__title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.3215; /* 37/28 */
+	margin: 25px 0 8px;
+	color: var(--coffee);
+}
+
+.advantages__text {
+	text-align: center;
+	line-height: 1.35; /* 27/20 */
+	color: var(--description);
+}
+
+.different__text {
+	text-align: center;
+	color: var(--description);
+}
+
+.different__highlight {
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--coffee);
+}
+
+.different__btn {
+	margin: 24px 0 82px;
+}
+
 /* === Section Amazing 1520*574px === */
 .amazing {
 	background-image: url('../images/amazing-bg.jpg');
@@ -246,4 +315,19 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 574px;
+}
+
+.amazing__title {
+	max-width: 575px;
+	padding-top: 135px;
+	font-size: 54px;
+	line-height: 1.3334; /* 72/54 */
+}
+
+.amazing__text {
+	max-width: 409px;
+	margin-block: 22px;
+}
+
+.amazing__btn {
 }
