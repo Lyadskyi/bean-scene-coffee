@@ -6,6 +6,7 @@
 	--btn-color: #f9c06a;
 	--btn-text: #1e1e1e;
 	--coffee: #603809;
+	--card-bg: #fff9f1;
 }
 
 body {
@@ -170,12 +171,72 @@ html {
 	font-weight: 700;
 	font-size: 54px;
 	text-align: center;
+	margin-bottom: 16px;
 	color: var(--coffee);
 }
 
 .enjoy__text {
 	text-align: center;
+	margin-bottom: 32px;
 	color: var(--description);
+}
+
+.coffee-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--coffee);
+}
+
+.coffee-menu-card {
+	position: relative;
+	text-align: center;
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.3s ease;
+	background: var(--card-bg);
+	border: 1px solid rgba(249, 192, 106, 0.42);
+}
+
+.coffee-menu-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.coffee-menu-card__img {
+	margin-top: -1px;
+	margin-inline: -1px;
+	margin-bottom: 14px;
+}
+
+.coffee-menu-card__title {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 1.3182; /* 29/22 */
+	margin-bottom: 6px;
+	color: #603809;
+}
+
+.coffee-menu-card__subtitle {
+	font-size: 16px;
+	line-height: 1.3125; /* 21/16 */
+	margin-bottom: 6px;
+	color: var(--btn-text);
+}
+
+.coffee-menu-card__text {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.3334; /* 24/18 */
+	margin-bottom: 42px;
+	color: #603809;
+}
+
+.coffee-menu-card__btn {
+	position: absolute;
+	left: 50%;
+	bottom: -24px;
+	transform: translateX(-50%);
 }
 
 /* === Section Amazing 1520*574px === */
