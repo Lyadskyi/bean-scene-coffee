@@ -155,7 +155,7 @@ html {
 	height: auto; /* Зберігає пропорції */
 }
 
-.coffee-blast {
+.coffee-blast-discover {
 	position: absolute;
 	z-index: -10;
 	left: -125px;
@@ -164,6 +164,7 @@ html {
 
 /* === Section Enjoy 1334*542px === */
 .enjoy {
+	position: relative;
 	padding-top: 82px;
 }
 
@@ -237,6 +238,12 @@ html {
 	left: 50%;
 	bottom: -24px;
 	transform: translateX(-50%);
+}
+
+.coffee-blast-enjoy {
+	position: absolute;
+	right: 0;
+	top: 611px;
 }
 
 /* === Section Different 1334*612px === */
@@ -327,7 +334,4 @@ html {
 .amazing__text {
 	max-width: 409px;
 	margin-block: 22px;
-}
-
-.amazing__btn {
 }
