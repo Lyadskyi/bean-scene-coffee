@@ -34,6 +34,7 @@ img {
 }
 
 html {
+	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
 
@@ -356,26 +357,26 @@ html {
 }
 
 .feedback-card {
-	box-sizing: border-box;
-	width: 980px;
+	width: 1080px;
 	height: 524px;
-	padding: 129px 100px 210px;
 	margin: 0 auto;
 	border: 1px solid rgba(249, 192, 106, 0.42);
 	background: var(--card-bg);
 }
 
 .feedback-card__quote-icon {
+	display: block;
+	/* padding-top: 29px;
+	padding-left: 29px; */
+	padding: 29px 0 0 29px;
 }
 
 .feedback-card__text {
 	width: 780px;
-	height: 185px;
 	margin: 0 auto;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 2;
-	text-align: center;
 	margin-bottom: 28px;
 	color: var(--description);
 }
@@ -389,6 +390,8 @@ html {
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 32px;
+	font-style: normal;
+	margin-bottom: 4px;
 	color: var(--coffee);
 }
 
@@ -404,8 +407,55 @@ html {
 	transform: translateX(-50%);
 }
 
+.coffee-blast-feedback-left {
+	position: absolute;
+	bottom: -56px;
+	left: -26px;
+}
+
+.coffee-blast-feedback-right {
+	position: absolute;
+	top: 131px;
+	right: -56px;
+	transform: rotateY(180deg);
+}
+
 /* === Section Subscribe 1520*374px === */
 .subscribe {
-	padding-top: 138px;
+	position: relative;
+	background-image:
+		linear-gradient(rgba(96, 56, 9, 0.8), rgba(96, 56, 9, 0.8)),
+		url('../images/subscribe-bg.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 374px;
+	margin-top: 138px;
+	text-align: center;
 	color: var(--coffee);
+}
+
+.subscribe__title {
+	font-size: 54px;
+	line-height: 1.3334; /* 72/54 */
+	padding-top: 80px;
+	color: var(--main-color);
+}
+
+.subscribe__text {
+	margin: 16px 0 26px;
+	color: var(--main-color);
+}
+
+.subscribe__img-left {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.subscribe__img-right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	transform: rotateY(180deg);
 }
