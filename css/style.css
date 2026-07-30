@@ -449,13 +449,70 @@ html {
 
 .subscribe__img-left {
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	bottom: -122px;
+	left: -147px;
 }
 
 .subscribe__img-right {
 	position: absolute;
-	right: 0;
-	bottom: 0;
+	right: -147px;
+	bottom: -122px;
 	transform: rotateY(180deg);
+}
+
+.subscribe__form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* overflow: hidden; */
+}
+
+.subscribe__input {
+	box-sizing: border-box;
+	font-family: var(--font-family);
+	width: 642px;
+	height: 66px;
+	font-size: 20px;
+	padding: 16px 0 16px 26px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border: 1px solid rgba(249, 192, 106, 0.42);
+	color: rgba(0, 0, 0, 0.34);
+}
+
+.subscribe__btn {
+	font-size: 22px;
+	width: 137px;
+	height: 66px;
+	border-radius: 4px;
+	margin-left: -3px;
+}
+
+/* === Section Footer 1520*492px === */
+.footer {
+	height: 492px;
+	background-image:
+		url('../images/footer-bg.png'),
+		linear-gradient(rgba(68, 40, 8, 1), rgba(68, 40, 8, 1));
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.footer__inner {
+	display: flex;
+	gap: 66px;
+}
+
+.footer-social {
+}
+
+.footer-about {
+}
+
+.footer-company {
+}
+
+.footer-contacts {
 }
