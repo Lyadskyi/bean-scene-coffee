@@ -420,6 +420,11 @@ html {
 	transform: rotateY(180deg);
 }
 
+/* === Slider === */
+.swiper {
+	color: #603809;
+}
+
 /* === Section Subscribe 1520*374px === */
 .subscribe {
 	position: relative;
@@ -498,7 +503,6 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
 
 .footer__inner {
 	display: flex;

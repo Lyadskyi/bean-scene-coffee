@@ -10,6 +10,10 @@
 			href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
@@ -116,7 +120,7 @@
 						<div class="coffee-menu-card">
 							<img
 								class="coffee-menu-card__img"
-								src="./images/chai latte.jpg"
+								src="./images/chai-latte.jpg"
 								alt="chai latte"
 								width="280"
 								height="222"
@@ -210,7 +214,6 @@
 								class="advantages__img"
 								src="./images/best-price.png"
 								alt="coin"
-								class="advantages__img"
 							/>
 							<h3 class="advantages__title">Affordable Price</h3>
 							<p class="advantages__text">
@@ -245,40 +248,6 @@
 				<p class="feedback__text">
 					Our customers has amazing things to say about us
 				</p>
-				<figure class="feedback-card">
-					<span class="feedback-card__quote-icon" aria-hidden="true">
-						<img
-							src="./images/quotes.svg"
-							alt="quotes"
-							width="103"
-							height="112"
-						/>
-					</span>
-					<blockquote class="feedback-card__text">
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a galley of
-							type and scrambled it to make a type specimen book. It has
-							survived not only five centuries, but also the leap into
-							electronic typesetting, remaining essentially unchanged. It was
-							popularised in the 1960s with the release of Letraset.....
-						</p>
-					</blockquote>
-					<figcaption class="feedback-card__author">
-						<cite class="feedback-card__name">Jonny Thomas</cite>
-						<span class="feedback-card__role">Project Manager</span>
-					</figcaption>
-				</figure>
-				<img
-					class="feedback-card__avatar"
-					src="./images/feedback-avatar.png"
-					alt="avatar"
-					width="112"
-					height="112"
-					loading="lazy"
-					decoding="async"
-				/>
 				<img
 					class="coffee-blast-feedback-left"
 					src="./images/coffee-blast-feedback.png"
@@ -298,6 +267,59 @@
 					decoding="async"
 				/>
 			</section>
+			<!-- === Slider === -->
+			<div class="slider">
+				<div class="container">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<figure class="feedback-card">
+									<span class="feedback-card__quote-icon" aria-hidden="true">
+										<img
+											src="./images/quotes.svg"
+											alt="quotes"
+											width="103"
+											height="112"
+										/>
+									</span>
+									<blockquote class="feedback-card__text">
+										<p>
+											Lorem Ipsum is simply dummy text of the printing and
+											typesetting industry. Lorem Ipsum has been the industry's
+											standard dummy text ever since the 1500s, when an unknown
+											printer took a galley of type and scrambled it to make a
+											type specimen book. It has survived not only five
+											centuries, but also the leap into electronic typesetting,
+											remaining essentially unchanged. It was popularised in the
+											1960s with the release of Letraset.....
+										</p>
+									</blockquote>
+									<figcaption class="feedback-card__author">
+										<cite class="feedback-card__name">Jonny Thomas</cite>
+										<span class="feedback-card__role">Project Manager</span>
+									</figcaption>
+									<img
+										class="feedback-card__avatar"
+										src="./images/feedback-avatar.png"
+										alt="avatar"
+										width="112"
+										height="112"
+										loading="lazy"
+										decoding="async"
+									/>
+								</figure>
+							</div>
+							<div class="swiper-slide">Slide 2</div>
+							<div class="swiper-slide">Slide 3</div>
+						</div>
+
+						<div class="swiper-pagination"></div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
 			<!-- === Section Subscribe === -->
 			<section class="subscribe">
 				<div class="container">
@@ -344,6 +366,7 @@
 			</div>
 		</footer>
 
+		<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
